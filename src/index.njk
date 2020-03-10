@@ -1,69 +1,75 @@
 ---
+
 layout: base
+
 ---
 
 {% include 'webring.njk' %}
 
 <div class="markdown">
-    <h2>Attack</h2>
-    <p>
-        Keeping knowledge centralized and locked-down stonewalls all of our learning, growth, and innovation.
-        We chose to decentralize our final project; to move fast, break things, & pick up the pieces together 
-        to build it better next time. 
-        We are attacking the biggest obstacle in humanity's path: disposability culture pushed on us by centralized, 
-        profit-seeking corporations. As university students, we have the privilege and power to create 
-        localized, independent, and sustainable lives. 
-    </p>
-    
-    <h2>Decay</h2>
-    <p>
-        Buildings burn, oceans rise, empires fall. We embrace our own mortality to live life to its fullest. 
-        The grave is a shrine, but the landfill is a locus non grata. We strive for a patchwork of gold filigree. 
-    </p>
-    
-    <h2>Sustain</h2>
-    <p>
-        Our webring is currently accepting any Western Washington University students
-        (that may change as the project goes in scope). Movers & shakers preferred!
-    </p>
-    
-    <h3>Join Up</h3>
-    <p>
-        To join the webring, <a href="{{ meta.repo }}/compare">open a pull request</a> 
-        and supply the name and URL of your site. If you publish a RSS feed, you can provide that as well.
-    </p> <p>
-        If you don't have a Github account, you can also use this form to sign up. 
-        The webring admins will then look at your site and handle your request.
-    </p>
+    ## Land Acknowledgement 
+    Western Washington University stands on the unceded ancestral lands of Coast Salish tribes. A people that are still here, continuing to honor and bring to light their ancient heritage.
+
+    Our final project is based on the indigenous Three Sisters[^1] agricultural technique. While the extent of Three Sisters cultivation among Coastal Salish peoples is unclear to us, we still owe a debt to the collective First Nations for their insight. By combining western engineering and indigenous agriculture, we hope to spotlight a modern alternative to extractive capitalism: local subsistence farming -- strengthened by renewable energy and energy applications. 
+
+    ## Decentralization and Food Production 
+    Team Four Corners selected "Decentralize" for our final project topic. But decentralize alone is an adverb, not a deliverable object or action. After debating mesh networks, local consumption, and other executions, we settled on designing a micro-garden with solar powered grow lights and water filtration. With exclusively electrical engineering and chemistry majors on Team Four Corners, energy and water purity are topics we have experience and a professional stake in. 
+
+    By locally sourcing food, we could cut out the estimated 6-25% of food production GHG emissions arising from transportation[^2]. Additionally, self-reliance would broaden the people's confidence, knowledge, and empathy with nature. 
+
+    The Viking Ring hosts the design requirements and general conclusion. To further decentralize our project, detailed analysis of the four modules -- Power Generation, Power Storage, Lighting, and Water Filtration -- are stored independently on sites managed by Four Corners team members. We allow for dissenting opinions, future expansion, and makes our final project accessible past the end of class -- i.e., useful to society at large. The Viking Ring site can be thought of as a sum of vectors and, potentially, the first *transparent* expression of a General Will[^3]. 
+
+    ## The Garden
+    For specific design requirements, we selected an 8'x10' plot of land and a $4,000 budget. Companion planting the Three Sisters -- winter squash, maize, and climbing beans -- nourishes the soil, deters pests & weeds, and overall maximizes the yield of the garden. Designing a purposeful garden was a team priority, but you could also plant flowers if you need independence from an overpriced florist. 
+
+    In eighty square feet, we can plant three pairs of 8' rows with a 1.5' walking aisle between each pair. That's pretty dense! To cultivate enough food to be worth our while, it has to be. Our growing season is limited to May through September (harvesting in October). Due to lower temperatures & insolation, an outdoors good garden was not considered sustainable except during the spring and summer months. 
+
+    The actual techniques of seeding, growing, and harvesting the garden are beyond the scope of our analysis. Websites like Native Seeds provide ample direction here[^4]. Rest assured, the Web Ring will be updated if we ever put the modular micro-garden into practice (first, we have to put together $4k...). 
+
+    ## The Modules
+
+    ### Power Generation
+
+    ### Power Storage 
+
+    ### Lighting 
+
+    ### Filtration
+
+    ## Summary 
+    Include  expected yearly yield of garden. 
+
+    Include breakdown of prices and power consumption per module. 
+
+    Include expected lifetime of modules.
+
+    What else?
+
+    ## Join the Viking Webring
+
+    To join the webring, <a href="{{ meta.repo }}/compare">open a pull request</a> and supply the name and URL of your site. If you publish a RSS feed, you can provide that as well.
+
+    If you don't have a Github account, you can also use this form to sign up. The webring admins will then look at your site and handle your request.
 
     {% include 'signupform.njk' %}
 
-    <h3>Raise the Banner</h3>
-    <p>
-        Once you've joined the ring, copy this code snippet into your site:
-    </p>
+    ### Raise the Banner
+
+    Once you've joined the ring, copy this code snippet into your site:
 
     {% highlight 'html' %}{% include 'snippet.njk' %}{% endhighlight %}
 
-    <p>
-        It will render this banner that links to the other members:
-    </p>
+    It will render this banner that links to the other members:
 
     {% include 'snippet.njk' %}
-    
-    <h2>Release</h2>
-    <p>
-        Most final project coursework will only gather dust after it's been graded. 
-        Our results and experience will be compiled on this central site, but stored on a decentralized network of backups. 
-        Expected Delivery: March 2020
-    </p>
-    
-    <h2>Want to host your own webring?</h2>
-    <p>
-        If you want to start your own webring, fork 
-        <a href="https://github.com/maxboeck/webring">this project</a> on Github 
-        and follow the instructions in the README.
-    </p>
 
     {% include 'github.njk' %}
+
+    ### References
+
+    [^1]: https://en.wikipedia.org/wiki/Three_Sisters_(agriculture)
+    [^2]: https://www.cleanmetrics.com/pages/Ch9_0923.pdf
+    [^3]: https://plato.stanford.edu/entries/rousseau/#IdeaGeneWill
+    [^4]: https://www.nativeseeds.org/blogs/blog-news/how-to-grow-a-three-sisters-garden
+
 </div>
