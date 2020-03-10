@@ -4,45 +4,57 @@ layout: base
 
 {% include 'webring.njk' %}
 
-<div class="markdown">
-    <h2>What's this?</h2>
-    <p>
-        A community of sites around a common topic, also known as a <a href="https://en.wikipedia.org/wiki/Webring">webring</a>. 
-        Each member includes a badge on their site that links to the previous and next sites in the ring. 
-        Kids in the 90s used to love it!
-    </p>
+<div class="sidebar">
+    <h2>Land Acknowledgement</h2>
+        <p>Western Washington University stands on the unceded ancestral lands of Coast Salish tribes. A people that are still here, continuing to honor and bring to light their ancient heritage.</p>
 
-    <h2>How to join</h2>
-    <p>
-        To join the webring, <a href="{{ meta.repo }}/compare">open a pull request</a> 
-        and supply the name and URL of your site. If you publish a RSS feed, you can provide that as well.
-    </p>
-    <p>
-        If you don't have a Github account, you can also use this form to sign up. 
-        The webring admins will then look at your site and handle your request.
-    </p>
+        <p>Our final project is based on the indigenous <a href="https://en.wikipedia.org/wiki/Three_Sisters_(agriculture)">Three Sisters</a> agricultural technique. While the extent of Three Sisters cultivation among Coastal Salish peoples is unclear to us, we still owe a debt to the collective First Nations for their insight. By combining western engineering and indigenous agriculture, we hope to spotlight a modern alternative to extractive capitalism: local subsistence farming -- strengthened by renewable energy and energy applications.</p>
 
-    {% include 'signupform.njk' %}
+    <h2>Decentralization and Food Production</h2>
+        <p>Team Four Corners selected "Decentralize" for our final project topic. But decentralize alone is an adverb, not a deliverable object or action. After debating mesh networks, local consumption, and other executions, we settled on designing a micro-garden with solar powered grow lights and water filtration. With exclusively electrical engineering and chemistry majors on Team Four Corners, energy and water purity are topics we have experience and a professional stake in.</p>
 
-    <h2>Add the banner</h2>
-    <p>
-        Once you've joined the ring, copy this code snippet into your site:
-    </p>
+        <p>By locally sourcing food, we could cut out the estimated <a href="https://www.cleanmetrics.com/pages/Ch9_0923.pdf">6-25% of food production GHG emissions arising from transportation</a>. Additionally, self-reliance would broaden the people's confidence, knowledge, and empathy with nature.</p>
 
-    {% highlight 'html' %}{% include 'snippet.njk' %}{% endhighlight %}
+        <p>The Viking Ring hosts the design requirements and general conclusion. To further decentralize our project, detailed analysis of the four modules -- Power Generation, Power Storage, Lighting, and Water Filtration -- are stored independently on sites managed by Four Corners team members. We allow for dissenting opinions, future expansion, and makes our final project accessible past the end of class -- i.e., useful to society at large. The Viking Ring site can be thought of as a sum of vectors and, potentially, the first *transparent* expression of a <a href="https://plato.stanford.edu/entries/rousseau/#IdeaGeneWill">General Will</a>.</p>
 
-    <p>
-        It will render this banner that links to the other members:
-    </p>
+    <h2>The Garden</h2>
+        <p>For specific design requirements, we selected an 8'x10' plot of land and a $4,000 budget. Companion planting the Three Sisters -- winter squash, maize, and climbing beans -- nourishes the soil, deters pests & weeds, and overall maximizes the yield of the garden. Designing a purposeful garden was a team priority, but you could also plant flowers if you need independence from an overpriced florist.</p>
 
-    {% include 'snippet.njk' %}
+        <p>In eighty square feet, we can plant three pairs of 8' rows with a 1.5' walking aisle between each pair. That's pretty dense! To cultivate enough food to be worth our while, it has to be. Our growing season is limited to May through September (harvesting in October). Due to lower temperatures & insolation, an outdoors good garden was not considered sustainable except during the spring and summer months.</p>
 
-    <h2>Want to host your own webring?</h2>
-    <p>
-        If you want to start your own webring, fork 
-        <a href="https://github.com/maxboeck/webring">this project</a> on Github 
-        and follow the instructions in the README.
-    </p>
+        <p>The actual techniques of seeding, growing, and harvesting the garden are beyond the scope of our analysis. Websites like <a href="https://www.nativeseeds.org/blogs/blog-news/how-to-grow-a-three-sisters-garden">Native Seeds provide ample direction</a> here. Rest assured, the Web Ring will be updated if we ever put the modular micro-garden into practice (first, we have to put together $4k...).</p>
+
+    <h2>The Modules</h2>
+        <h3>Power Generation</h3>
+        <h3>Power Storage</h3>
+        <h3>Lighting</h3>
+        <h3>Filtration</h3>
+
+    <h2>Summary</h2>
+        <p>Include expected yearly yield of garden. 
+
+        Include breakdown of prices and power consumption per module. 
+
+        Include expected lifetime of modules. <br><br>
+
+        What else?</p>
+
+    <h2>Join the Viking Webring</h2>
+        <p>As a continuing project, the Viking Ring is open to all current WWU Students. To join, <a href="{{ meta.repo }}/compare">open a pull request</a> and supply the name and URL of your site. If you publish a RSS feed, you can provide that as well.</p>
+
+        <p>If you don't have a Github account, you can also use this form to sign up. The webring admins will then look at your site and handle your request.</p>
+
+        {% include 'signupform.njk' %}
+
+    <h3>Raise the Banner</h3>
+        <p>Once you've joined the ring, copy this code snippet into your site:</p>
+
+        {% highlight 'html' %}{% include 'snippet.njk' %}{% endhighlight %}
+
+        <p>It will render this banner that links to the other members:</p>
+
+        {% include 'snippet.njk' %}
 
     {% include 'github.njk' %}
+
 </div>
