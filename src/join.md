@@ -1,0 +1,25 @@
+---
+layout: base
+---
+
+{% include 'webring.njk' %}
+
+<div class="sidebar">
+    <h2>Join the Viking Webring</h2>
+        <p>As a continuing project, the Viking Ring is open to all current WWU Students. To join, <a href="{{ meta.repo }}/compare">open a pull request</a> and supply the name and URL of your site. If you publish a RSS feed, you can provide that as well.</p>
+
+        <p>If you don't have a Github account, you can also use this form to sign up. The webring admins will then look at your site and handle your request.</p>
+
+        {% include 'signupform.njk' %}
+
+    <h3>Raise the Banner</h3>
+        <p>Once you've joined the ring, copy this code snippet into your site:</p>
+
+        {% highlight 'html' %}{% include 'snippet.njk' %}{% endhighlight %}
+
+        <p>It will render this banner that links to the other members:</p>
+
+        {% include 'snippet.njk' %}
+
+    {% include 'github.njk' %}
+</div>
